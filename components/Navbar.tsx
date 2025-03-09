@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from '../img/logo.jpg'
+import { Avatar, AvatarImage, AvatarFallback} from "@/components/ui/avatar";
 
 export default function Navbar() {
   return (
@@ -8,6 +9,11 @@ export default function Navbar() {
     <Link href="/">
         <Image src={logo} alt='logo' className="h-10 w-10" />
     </Link>
+
+    <Avatar className="cursor-pointer text-slate-800 font-semibold">
+        <AvatarImage src="https://github.com/shadcn.pn" alt="@shadcn"/>
+        <AvatarFallback>CN</AvatarFallback>
+    </Avatar>
    </header>
   )
 }

@@ -16,7 +16,7 @@ import {
   Folders,
   CreditCard,
   Settings,
-  Users,
+  User,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -26,13 +26,26 @@ export default function Sidebar() {
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Suggestions">
-          <CommandItem>Calendar</CommandItem>
-          <CommandItem>Search Emoji</CommandItem>
-          <CommandItem>Calculator</CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-1" />
+            <Link href="/">Dashboard</Link>
+          </CommandItem>
+          <CommandItem>
+            <Newspaper className="mr-1" />
+            <Link href="/posts">Posts</Link>
+          </CommandItem>
+          <CommandItem>
+            <Folders className="mr-1" />
+            <Link href="#">Category</Link>
+          </CommandItem>
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
-          <CommandItem>Profile</CommandItem>
+          <CommandItem>
+            <User className="mr-1" />
+            <span>Profile</span>
+            <CommandShortcut>ctrl P</CommandShortcut>
+          </CommandItem>
           <CommandItem>Billing</CommandItem>
           <CommandItem>Settings</CommandItem>
         </CommandGroup>

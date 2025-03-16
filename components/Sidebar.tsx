@@ -46,8 +46,16 @@ export default function Sidebar() {
             <span>Profile</span>
             <CommandShortcut>ctrl P</CommandShortcut>
           </CommandItem>
-          <CommandItem>Billing</CommandItem>
-          <CommandItem>Settings</CommandItem>
+          <CommandItem>
+            <User className="mr-1" />
+            <span>Billing</span>
+            <CommandShortcut>ctrl P</CommandShortcut>
+          </CommandItem>
+          <CommandItem>
+            <User className="mr-1" />
+            <span>Settings</span>
+            <CommandShortcut>ctrl P</CommandShortcut>
+          </CommandItem>
         </CommandGroup>
       </CommandList>
     </Command>

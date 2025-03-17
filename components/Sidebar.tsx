@@ -49,12 +49,12 @@ export default function Sidebar() {
           <CommandItem>
             <User className="mr-1" />
             <span>Billing</span>
-            <CommandShortcut>ctrl P</CommandShortcut>
+            <CommandShortcut>ctrl B</CommandShortcut>
           </CommandItem>
           <CommandItem>
             <User className="mr-1" />
             <span>Settings</span>
-            <CommandShortcut>ctrl P</CommandShortcut>
+            <CommandShortcut>ctrl S</CommandShortcut>
           </CommandItem>
         </CommandGroup>
       </CommandList>

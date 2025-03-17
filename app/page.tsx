@@ -1,12 +1,11 @@
-
-
-import { Button } from "@/components/ui/button";
+import DashboardCard from "@/components/dashboard/DashboardCard";
 
 export default function Home() {
   return (
     <>
-      <h1>Dashboard</h1>
-      <Button variant="outline" size="lg" className="rounded-sm">Click me</Button>
+      <div className="flex flex-col justify-between gap-5 md-5 md:flex-row">
+        <DashboardCard />
+      </div>
     </>
   );
 }

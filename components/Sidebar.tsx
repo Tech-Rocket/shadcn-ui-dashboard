@@ -26,32 +26,32 @@ export default function Sidebar() {
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Suggestions">
           <CommandItem>
-            <LayoutDashboard className="mr-1" />
+            <LayoutDashboard className="mr-1.5" />
             <Link href="/">Dashboard</Link>
           </CommandItem>
           <CommandItem>
-            <Newspaper className="mr-1" />
+            <Newspaper className="mr-1.5" />
             <Link href="/posts">Posts</Link>
           </CommandItem>
           <CommandItem>
-            <Folders className="mr-1" />
+            <Folders className="mr-1.5" />
             <Link href="#">Category</Link>
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
           <CommandItem>
-            <User className="mr-1" />
+            <User className="mr-1.5" />
             <span>Profile</span>
             <CommandShortcut>ctrl P</CommandShortcut>
           </CommandItem>
           <CommandItem>
-            <CreditCard className="mr-1" />
+            <CreditCard className="mr-1.5" />
             <span>Billing</span>
             <CommandShortcut>ctrl B</CommandShortcut>
           </CommandItem>
           <CommandItem>
-            <Settings className="mr-1" />
+            <Settings className="mr-1.5" />
             <span>Settings</span>
             <CommandShortcut>ctrl S</CommandShortcut>
           </CommandItem>

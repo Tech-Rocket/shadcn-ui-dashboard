@@ -18,6 +18,16 @@ interface PostTableProps {
 }
 
 export default function PostTable(props: PostTableProps) {
+  //sort post in dec order based on the date
+  const sortedPosts: PostType[] = [...posts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  // filter post to limit
+  const filteredPosts = props.limit
+    ? sortedPosts.slice(0, props.limit)
+    : sortedPosts;
+
   return (
     <div className="mt-8">
       <h3 className="text-2xl mb-4 font-semibold">
@@ -36,9 +46,8 @@ export default function PostTable(props: PostTableProps) {
             <TableHead>View</TableHead>
           </TableRow>
         </TableHeader>
-
         <TableBody>
-          {posts.map((post) => (
+          {filteredPosts.map((post) => (
             <TableRow key={post.id}>
               <TableCell>{post.title}</TableCell>
               <TableCell className="hidden md:table-cell">
@@ -49,7 +58,7 @@ export default function PostTable(props: PostTableProps) {
               </TableCell>
               <TableCell>
                 <Link href={`/posts/edit/${post.id}`}>
-                  <Button className="bg-blue-500 hover:bg-blue-700 cursor-pointer py-2.5 px-6 rounded-[2px]">
+                  <Button className="bg-blue-500 hover:bg-blue-700 cursor-pointer py-2.5 px-6 rounded text-sm">
                     Edit
                   </Button>
                 </Link>

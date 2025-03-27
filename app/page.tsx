@@ -28,7 +28,7 @@ export default function Home() {
         />
       </div>
 
-      <PostTable />
+      <PostTable title="Latest Posts" />
     </>
   );
 }

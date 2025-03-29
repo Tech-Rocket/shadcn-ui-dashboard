@@ -25,7 +25,7 @@ export default function Sidebar() {
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Suggestions">
-          <CommandItem>
+          <CommandItem className="border-2 border-black">
             <LayoutDashboard className="mr-1.5" />
             <Link href="/">Dashboard</Link>
           </CommandItem>

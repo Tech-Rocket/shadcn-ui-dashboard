@@ -1,7 +1,9 @@
-export default function PostPage() {
+import PostTable from "@/components/posts/PostTables";
+
+export default function PostsPage() {
   return (
-    <div>
-      <h1>Post page</h1>
-    </div>
+    <>
+      <PostTable />
+    </>
   );
 }

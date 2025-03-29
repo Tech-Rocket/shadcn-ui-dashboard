@@ -35,7 +35,6 @@ export default function PostTable(props: PostTableProps) {
       </h3>
 
       <Table>
-        {/* <TableCaption>A list of recent post</TableCaption> */}
         <TableHeader>
           <TableRow>
             <TableHead>Title</TableHead>

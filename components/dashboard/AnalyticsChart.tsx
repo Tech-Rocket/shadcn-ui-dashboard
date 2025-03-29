@@ -24,7 +24,7 @@ export default function AnalyticsChart() {
   return (
     <>
       <div className="mt-6">
-        <Card>
+        <Card className="rounded">
           <CardHeader>
             <CardTitle className="text-xl font-semibold">
               Anaylitics for this year
